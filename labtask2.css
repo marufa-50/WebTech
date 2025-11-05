@@ -1,0 +1,108 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Form Container */
+form {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+/* Form Header */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Radio Buttons */
+.gender-group {
+  margin-bottom: 6px;
+}
+
+.gender-group input[type="radio"] {
+  margin-right: 15px;
+}
+
+.gender-group label {
+  display: inline-block;
+  align-items: center;
+  margin-right: 18px;
+  font-weight: normal;
+}
+
+/* Checkbox */
+.terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.terms input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Input Focus hsjdhf */
+input:focus, select:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  form {
+
+    width: 90%;
+  }
+}
