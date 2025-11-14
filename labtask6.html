@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Admission Form</title>
+    <meta name="description" content="Online admission form for new university applicants">
+    <meta name="author" content="Your Name">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f5;
+            padding: 20px;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .inline {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+
+    <h2>University Admission Form</h2>
+
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>First Name:</label>
+        <input type="text" name="fname" maxlength="30" required>
+
+        <label>Last Name:</label>
+        <input type="text" name="lname" maxlength="30" required>
+
+        <label>Email Address:</label>
+        <input type="email" name="email" required>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" class="inline" required> Male
+        <input type="radio" name="gender" value="Female" class="inline" required> Female
+        <input type="radio" name="gender" value="Other" class="inline" required> Other
+    </fieldset>
+
+
+    <!-- Academic Information -->
+    <fieldset>
+        <legend>Academic Information</legend>
+
+        <label>Last Completed Degree:</label>
+        <input type="text" name="degree" maxlength="40" required>
+
+        <label>Institution Name:</label>
+        <input type="text" name="institution" maxlength="50" required>
+
+        <label>Year of Completion:</label>
+        <input type="date" name="completion_year" required>
+
+        <label>Preferred Department:</label>
+        <select name="department" required>
+            <option value="">-- Select Department --</option>
+            <option>Computer Science</option>
+            <option>Electrical Engineering</option>
+            <option>Business Administration</option>
+            <option>Mathematics</option>
+            <option>Economics</option>
+        </select>
+
+        <label>Interests (choose any):</label>
+        <input type="checkbox" name="interests" value="Programming" class="inline"> Programming
+        <input type="checkbox" name="interests" value="Research" class="inline"> Research
+        <input type="checkbox" name="interests" value="Sports" class="inline"> Sports
+        <input type="checkbox" name="interests" value="Music" class="inline"> Music
+    </fieldset>
+
+
+    <!-- Document Upload Section -->
+    <fieldset>
+        <legend>Documents Upload</legend>
+
+        <label>Upload Transcript (PDF only):</label>
+        <input type="file" name="transcript" accept=".pdf" required>
+
+        <label>Upload Photo (JPG/PNG):</label>
+        <input type="file" name="photo" accept=".jpg, .jpeg, .png" required>
+    </fieldset>
+
+    <!-- Form Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marufa Islam">
+    <meta name="description" content="Personal portfolio webpage for internship showcasing skills, education, and contact form.">
+    <meta name="keywords" content="portfolio, computer science student, internship, web development, education">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Computer Science Student</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f7fa;
+        }
+
+        header {
+            background: #1f6feb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #555;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background: #1f6feb;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+
+        form button {
+            background: #1f6feb;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #144a8b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Biography Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a Computer Science student passionate about web development, programming, 
+                and problem-solving. I am preparing for an internship where I hope to apply my 
+                technical skills in real-world projects.
+            </p>
+        </section>
+
+        <!-- Education Table -->
+        <section id="education">
+            <h2>Educational Qualifications</h2>
+
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Result</th>
+                </tr>
+
+                <tr>
+                    <td>BSc in Computer Science</td>
+                    <td>ABC University</td>
+                    <td>2022–Present</td>
+                    <td>Running</td>
+                </tr>
+
+                <tr>
+                    <td>HSC</td>
+                    <td>XYZ College</td>
+                    <td>2021</td>
+                    <td>GPA 5.00</td>
+                </tr>
+
+                <tr>
+                    <td>SSC</td>
+                    <td>DEF School</td>
+                    <td>2019</td>
+                    <td>GPA 5.00</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name" required>
+
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Message:</label>
+                <textarea rows="5" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Your Name | Computer Science Student</p>
+    </footer>
+
+</body>
+</html>

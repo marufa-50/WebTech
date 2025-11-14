@@ -1,0 +1,39 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f3f8;
+}
+
+/* General class for all sections */
+.section-box {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+/* Unique background colors using IDs */
+#about {
+    background-color: #ffe0e0; /* Light pink */
+}
+
+#education {
+    background-color: #e0ffe6; /* Light green */
+}
+
+#hobbies {
+    background-color: #e0f0ff; /* Light blue */
+}
+
+/* Custom HR styling */
+hr {
+    height: 4px;
+    background-color: #666;
+    border: none;
+    width: 80%;
+    margin: 20px auto;
+}
+
+h2 {
+    margin-top: 0;
+}
